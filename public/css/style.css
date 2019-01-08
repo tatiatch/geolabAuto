@@ -531,7 +531,6 @@ html {
 }
 
 .success-message {
-  display: none;
   font-size: 14px;
   font-family: roboto;
   font-weight: 100;

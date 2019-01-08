@@ -316,13 +316,13 @@
                   </div>
                 </div>
               </div>
-              <p class="success-message" id="success-message">
+             <p class="success-message" id="success-message">
                 <?php 
                   if(isset($message)){
                     echo $message;
                   }
                 ?>
-              </p>
+            </p>
               <div class="submit-button-div">
                 <!-- <p>Thank you for your intereset for us, your message has been sent!</p> -->
                 <button type="submit" class="submit-button">send</button>
@@ -380,5 +380,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="/js/jquery.js"></script>
+    <?php if(isset($message)) {?>
+    <script>
+      $('html,body').scrollTop(4000);
+    </script>
+    <?php }?>
   </body>
 </html>
