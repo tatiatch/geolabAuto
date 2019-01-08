@@ -1,0 +1,742 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* common styles */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+/* common styles */
+
+/* home */
+.main-img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.main-pic-name {
+  position: absolute;
+  width: 21.4%;
+  top: 30px;
+  left: 30px;
+}
+
+.red-small-dot {
+  position: absolute;
+  width: 2%;
+  height: 3%;
+  background-color: #ec2024;
+  z-index: 1;
+  border-radius: 50%;
+  transition: height, width 0.4s;
+}
+.red-small-dot:hover {
+  width: 3%;
+  height: 4%;
+}
+
+.white-small-dot {
+  position: absolute;
+  width: 4%;
+  height: 7%;
+  background-color: #ffff;
+  z-index: 1;
+  border-radius: 50%;
+  opacity: 0.4;
+  transition: height, width 0.4s;
+}
+.white-small-dot:hover {
+  width: 6%;
+  height: 9%;
+}
+
+.white-big-dot {
+  position: absolute;
+  width: 8%;
+  height: 12%;
+  background-color: #ffff;
+  z-index: 1;
+  border-radius: 50%;
+  opacity: 0.4;
+  transition: height, width 0.4s;
+}
+
+.white-big-dot:hover {
+  width: 10%;
+  height: 15%;
+}
+
+.slider-left {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 5.41%;
+  cursor: pointer;
+}
+
+.slider-right {
+  width: 5.41%;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  cursor: pointer;
+}
+
+/* nav */
+
+.nav-toggler {
+  width: 2.1%;
+  position: absolute;
+  top: 7%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.nav-toggler-close {
+  display: none;
+  width: 1.9%;
+  position: absolute;
+  top: 7%;
+  right: 5%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.nav-list {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 6.5vw;
+}
+
+.nav-links:hover {
+  text-decoration: none;
+  color: black;
+}
+.nav-links {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-ul {
+  margin-left: 23%;
+}
+
+.nav-ul li {
+  cursor: pointer;
+  line-height: 1;
+  margin-bottom: 6%;
+}
+
+.nav {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(250, 250, 250, 0.8);
+}
+
+.nav-list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* nav */
+
+/* home */
+
+/* collection cars section */
+
+.corner-garage-header {
+  padding: 100px 0px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 72px;
+}
+
+.garage-options-row {
+  padding: 0 18%;
+}
+
+.garage-option-divs {
+  width: 20%;
+}
+
+.garage-wrap-div {
+  width: 100%;
+  height: 100%;
+  background-color: #ebe8de;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.garage-modify {
+  width: 35%;
+  margin-top: 20%;
+}
+
+.garage-modify-p {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 15%;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.road {
+  margin: 50px 0px 10px 0px;
+  overflow: hidden;
+}
+
+.bus {
+  width: 15%;
+  position: absolute;
+  top: 65%;
+  animation: busdrive 7s infinite both reverse linear;
+}
+
+/* collection cars section */
+
+/* contact section */
+
+.contact-section {
+  position: relative;
+}
+
+.map-container {
+  width: 83%;
+  margin: 0 auto;
+}
+
+.map-iframe {
+  width: 100%;
+  height: 900px;
+  width: 100%;
+  border: 0px;
+}
+
+.form-div {
+  padding: 5% 5% 5% 15%;
+}
+
+.contact-form-wrapper {
+  position: absolute;
+  top: 45%;
+  width: 80%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form-wr {
+  display: flex;
+  background-color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: lighter;
+  height: 570px;
+}
+
+.contact-information {
+  background-color: #ebe8de;
+  width: 37%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.twitter,
+.fb {
+  padding-left: 5%;
+}
+
+.social-networks {
+  margin-left: 20%;
+  padding-bottom: 15%;
+}
+
+.sn-icons {
+  width: 15%;
+}
+
+.contact-information-header {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 2.55vw;
+  padding-left: 10%;
+  padding-top: 10%;
+}
+
+.click-to-view {
+  font-size: 2.55vw;
+  text-align: center;
+  font-weight: bold;
+  width: 50%;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.main-form {
+  width: 63%;
+  padding-top: 3%;
+  padding-left: 6%;
+}
+
+.form-header {
+  letter-spacing: 5px;
+  font-size: 2.55vw;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+}
+
+.left-side {
+  width: 33%;
+}
+
+.form-control {
+  margin-top: 10%;
+  border: none;
+  border-radius: 0%;
+  background: #f2f2f2;
+}
+
+.form-control:first-child {
+  margin-top: 0%;
+}
+
+/* custom radio/check buttons */
+
+.form-check {
+  padding: 0;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 7px;
+  left: 7px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #020202;
+}
+
+/* .. */
+
+/* The container */
+.container-check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-check input:checked ~ .checkmark-check:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-check .checkmark-check:after {
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* custom radio/check buttons */
+
+.form-control-textarea {
+  resize: none;
+}
+
+.right-side {
+  width: 54%;
+  margin-left: 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.female {
+  margin-left: 20%;
+}
+
+.copyright {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-family: roboto;
+  font-weight: 300;
+}
+
+.submit-button-div {
+  display: flex;
+  margin-top: 10%;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+
+.submit-button {
+  background-color: black;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.social-netoworks-reponsive {
+  display: none;
+}
+
+.sn-icons-responsive {
+  width: 15%;
+}
+
+.social-networks-responsive {
+  text-align: end;
+}
+
+/* contact section */
+
+/* footer */
+
+.footer {
+  display: none;
+  width: 97vw;
+  border-top: 1px solid #dfdfdf;
+  margin-left: -12%;
+  padding: 2%;
+}
+
+.copyright-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-family: roboto;
+  font-size: 11px;
+}
+
+.gender-error {
+  top: 80%;
+  width: max-content;
+}
+
+.success-message {
+  display: none;
+  font-size: 14px;
+  font-family: roboto;
+  font-weight: 100;
+  position: absolute;
+  margin-top: 5%;
+  color: green;
+}
+
+/* footer */
+
+@keyframes busdrive {
+  0% {
+    transform: translateX(-33vh);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1500px) {
+  .form-header {
+    font-size: 50px;
+  }
+
+  .main-img {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .contact-information {
+    display: none;
+  }
+
+  .map-container {
+    width: 100%;
+  }
+
+  .submit-button-div {
+    margin-top: 7%;
+  }
+
+  .main-form {
+    padding: 5% 0 0 0;
+    width: 100%;
+    background-color: #ebe8de;
+  }
+
+  .form-header {
+    text-align: center;
+  }
+
+  .form-inputs-wrapper {
+    padding-left: 15%;
+    margin-top: 3%;
+  }
+
+  .garage-options-row {
+    padding: 0px 5%;
+  }
+  .map-iframe {
+    height: 573px;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .success-message {
+    margin-left: 10%;
+  }
+
+  .social-netoworks-reponsive {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+  }
+
+  .click-to-vew-responsive {
+    font-size: 50px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+  }
+
+  .footer {
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .corner-garage-header {
+    font-size: 50px;
+  }
+  .garage-option-divs {
+    width: 20%;
+    margin-top: 5%;
+    padding: 0 5% 0 5%;
+  }
+
+  .main-form {
+    height: 900px;
+  }
+
+  .form-inputs-wrapper {
+    display: flex;
+    padding: 5%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side {
+    width: 100%;
+  }
+
+  .right-side {
+    margin-top: 10%;
+    margin-left: 0px;
+    width: 54%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .newsetller {
+    margin-top: 15%;
+  }
+
+  .success-message {
+    margin-left: 25%;
+  }
+
+  .submit-button-div {
+    display: flex;
+    margin-right: 10%;
+    align-self: flex-start;
+    margin-top: 1%;
+    justify-content: start;
+    padding-left: 5%;
+  }
+
+  .click-to-vew-responsive {
+    font-size: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+  }
+
+  .contact-form-wr {
+    height: auto;
+  }
+
+  .click-to-vew-responsive {
+    width: 100%;
+  }
+
+  .form-inputs-wrapper {
+    padding-bottom: 0;
+  }
+}
+/* media queries */
+
+.carousel-control-next {
+  background-image: url("./pics/svg/slider-right.svg");
+  background-repeat: no-repeat;
+  width: 3.8%;
+  height: 16.41%;
+  position: absolute;
+  margin: auto 0;
+  right: 0;
+  opacity: 1;
+  cursor: pointer;
+}
+.carousel-control-prev {
+  background-image: url("./pics/svg/slider-left.svg");
+  background-repeat: no-repeat;
+  width: 3.8%;
+  height: 16.41%;
+  position: absolute;
+  margin: auto 0;
+  right: 0;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.carousel-caption {
+  text-align: end;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.carousel-caption-date {
+  padding-right: 5%;
+  color: #ffffff;
+  font-size: 3.75vw;
+  font-family: "RobotoCondensed", sans-serif;
+  font-weight: bold;
+}
+
+.carousel-caption-name {
+  padding-right: 5%;
+  color: #ffffff;
+  font-size: 2.03vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
